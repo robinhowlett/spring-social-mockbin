@@ -1,0 +1,112 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "mockbin.com",
+            "version": "1.5.0"
+        },
+        "entries": [
+            {
+                "startedDateTime": "2014-07-01T00:00:00.000Z",
+                "time": 1000,
+                "clientIPAddress": "40.140.33.170",
+                "request": {
+                    "method": "GET",
+                    "url": "http://mockbin.com/bin/3c149e20-bc9c-4c68-8614-048e6023a108",
+                    "httpVersion": "HTTP/1.1",
+                    "headers": [
+                        {
+                            "name": "Content-Type",
+                            "value": "text/html; charset=UTF-8"
+                        },
+                        {
+                            "name": "Date",
+                            "value": "Wed, 21 Jan 2015 23:36:35 GMT"
+                        },
+                        {
+                            "name": "Server",
+                            "value": "Apache"
+                        },
+                        {
+                            "name": "Transfer-Encoding",
+                            "value": "chunked"
+                        },
+                        {
+                            "name": "Cache-Control",
+                            "value": "max-age=7200"
+                        },
+                        {
+                            "name": "Connection",
+                            "value": "Keep-Alive"
+                        },
+                        {
+                            "name": "Keep-Alive",
+                            "value": "timeout=5, max=50"
+                        },
+                        {
+                            "name": "Expires",
+                            "value": "Thu, 22 Jan 2015 01:36:35 GMT"
+                        }
+                    ],
+                    "headersSize": 500,
+                    "bodySize": 750
+                },
+                "response": {
+                    "bodySize": 70993,
+                    "content": {
+                        "compression": 0,
+                        "mimeType": "text/html; charset=UTF-8",
+                        "size": 20,
+                        "text": "<h1>Hello World</h1>"
+                    },
+                    "headers": [
+                        {
+                            "name": "Content-Type",
+                            "value": "text/html; charset=UTF-8"
+                        },
+                        {
+                            "name": "Date",
+                            "value": "Wed, 21 Jan 2015 23:36:35 GMT"
+                        },
+                        {
+                            "name": "Server",
+                            "value": "Apache"
+                        },
+                        {
+                            "name": "Transfer-Encoding",
+                            "value": "chunked"
+                        },
+                        {
+                            "name": "Cache-Control",
+                            "value": "max-age=7200"
+                        },
+                        {
+                            "name": "Connection",
+                            "value": "Keep-Alive"
+                        },
+                        {
+                            "name": "Keep-Alive",
+                            "value": "timeout=5, max=50"
+                        },
+                        {
+                            "name": "Expires",
+                            "value": "Thu, 22 Jan 2015 01:36:35 GMT"
+                        }
+                    ],
+                    "headersSize": 323,
+                    "httpVersion": "HTTP/1.1",
+                    "status": 200,
+                    "statusText": "OK",
+                    "cookies": [],
+                    "redirectURL": ""
+                },
+                "timings": {
+                    "send": 0,
+                    "wait": 0,
+                    "receive": 1000,
+                    "ssl": -1
+                }
+            }
+        ]
+    }
+}

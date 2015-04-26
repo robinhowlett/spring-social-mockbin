@@ -1,0 +1,51 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "http://mockbin.com/bin/3c149e20-bc9c-4c68-8614-048e6023a108",
+        "httpVersion": "HTTP/1.1",
+        "headers": [
+        	{
+	            "name": "Accept",
+	            "value": "text/plain, application/json, application/*+json, */*"
+	        },
+            {
+                "name": "Content-Type",
+                "value": "text/html; charset=UTF-8"
+            },
+            {
+                "name": "Date",
+                "value": "Wed, 21 Jan 2015 23:36:35 GMT"
+            },
+            {
+                "name": "Server",
+                "value": "Apache"
+            },
+            {
+                "name": "Transfer-Encoding",
+                "value": "chunked"
+            },
+            {
+                "name": "Cache-Control",
+                "value": "max-age=7200"
+            },
+            {
+                "name": "Connection",
+                "value": "Keep-Alive"
+            },
+            {
+                "name": "Keep-Alive",
+                "value": "timeout=5, max=50"
+            },
+            {
+                "name": "Expires",
+                "value": "Thu, 22 Jan 2015 01:36:35 GMT"
+            },
+            {
+	            "name": "Content-Length",
+	            "value": "0"
+	        }
+        ],
+        "headersSize": 307,
+        "bodySize": 0
+    }
+}
