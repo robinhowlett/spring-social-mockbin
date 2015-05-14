@@ -3,6 +3,7 @@
  */
 package org.springframework.social.mockbin.impl;
 
+import static com.fasterxml.jackson.databind.DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES;
 import static com.fasterxml.jackson.databind.MapperFeature.SORT_PROPERTIES_ALPHABETICALLY;
 import static com.fasterxml.jackson.databind.SerializationFeature.INDENT_OUTPUT;
 import static com.fasterxml.jackson.databind.SerializationFeature.ORDER_MAP_ENTRIES_BY_KEYS;
@@ -21,23 +22,23 @@ import org.springframework.social.mockbin.Mockbin;
 import org.springframework.social.mockbin.impl.resources.BinTemplate;
 import org.springframework.social.mockbin.impl.resources.CompressionTemplate;
 import org.springframework.social.mockbin.impl.resources.CookieTemplate;
+import org.springframework.social.mockbin.impl.resources.DebuggingTemplate;
 import org.springframework.social.mockbin.impl.resources.DelayTemplate;
 import org.springframework.social.mockbin.impl.resources.HeaderTemplate;
 import org.springframework.social.mockbin.impl.resources.IpTemplate;
 import org.springframework.social.mockbin.impl.resources.RedirectTemplate;
 import org.springframework.social.mockbin.impl.resources.StatusTemplate;
-import org.springframework.social.mockbin.impl.resources.DebuggingTemplate;
 import org.springframework.social.mockbin.impl.resources.StreamTemplate;
 import org.springframework.social.mockbin.operations.resources.BinOperations;
 import org.springframework.social.mockbin.operations.resources.CompressionOperations;
 import org.springframework.social.mockbin.operations.resources.CookieOperations;
+import org.springframework.social.mockbin.operations.resources.DebuggingOperations;
 import org.springframework.social.mockbin.operations.resources.DelayOperations;
 import org.springframework.social.mockbin.operations.resources.HeaderOperations;
 import org.springframework.social.mockbin.operations.resources.IpOperations;
 import org.springframework.social.mockbin.operations.resources.RedirectOperations;
 import org.springframework.social.mockbin.operations.resources.StatusOperations;
 import org.springframework.social.mockbin.operations.resources.StreamOperations;
-import org.springframework.social.mockbin.operations.resources.DebuggingOperations;
 import org.springframework.social.mockbin.settings.MockbinClientSettings;
 
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
@@ -85,6 +86,7 @@ public class MockbinTemplate extends AbstractBaseApiTemplate implements Mockbin 
 	@Override
 	protected ObjectMapper createObjectMapper() {
 		JodaMapper mapper = new JodaMapper();
+		mapper.configure(FAIL_ON_UNKNOWN_PROPERTIES, false);
 		mapper.enable(INDENT_OUTPUT);
 		mapper.enable(ORDER_MAP_ENTRIES_BY_KEYS);
 		mapper.enable(SORT_PROPERTIES_ALPHABETICALLY);
