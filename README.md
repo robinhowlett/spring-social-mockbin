@@ -64,3 +64,29 @@ DelayResponse delayedResponse = mockbin.delayOperations().delay(5000);
 // Compression: GZipped Response Body
 ResponseEntity<String> responseEntity = mockbin.compressionOperations().gzip();
 ```
+
+## Using
+
+Add the following repository to your `pom.xml`:
+
+	<repositories>
+		<repository>
+			<id>s3.release</id>
+			<name>Robin's S3 Release Repository</name>
+			<url>http://maven.robinhowlett.com/release</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+and the following dependency:
+
+    <dependency>
+        <groupId>com.sportslabs.amp</groupId>
+        <artifactId>spring-social-mockbin</artifactId>
+        <version>1</version>
+    </dependency>
