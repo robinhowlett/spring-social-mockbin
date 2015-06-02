@@ -4,16 +4,7 @@ branches:
   - master
   - /^feature.*/
 before_install:
-- openssl aes-256-cbc -K $encrypted_5dc244cd2998_key -iv $encrypted_5dc244cd2998_iv -in deploy_key.enc -out deploy_key -d
-- mvn -f spring-social-bootstrap-pom versions:set -DnewVersion=$TRAVIS_BUILD_NUMBER
 - mvn versions:set -DnewVersion=$TRAVIS_BUILD_NUMBER
-after_success:
-- git config user.email "rhowlett@silverchalice.com"
-- git config user.name "Robin Howlett"
-- chmod 600 deploy_key
-- eval "$(ssh-agent -s)"
-- ssh-add deploy_key
 after_script:
 - mvn versions:commit
-- mvn -Dtag=$TRAVIS_BUILD_NUMBER scm:tag
 - mvn deploy

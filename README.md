@@ -88,5 +88,5 @@ and the following dependency:
     <dependency>
         <groupId>com.sportslabs.amp</groupId>
         <artifactId>spring-social-mockbin</artifactId>
-        <version>1</version>
+        <version>2</version>
     </dependency>
