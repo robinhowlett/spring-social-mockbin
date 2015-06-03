@@ -5,12 +5,16 @@
 	<parent>
 		<groupId>com.sportslabs.amp</groupId>
 		<artifactId>spring-social-bootstrap-pom</artifactId>
-		<version>12</version>
+		<version>13</version>
 		<relativePath />
 	</parent>
 
 	<artifactId>spring-social-mockbin</artifactId>
     <version>0-SNAPSHOT</version>
+
+    <properties>
+        <spring-social-bootstrap.version>${project.parent.version}</spring-social-bootstrap.version>
+    </properties>
 
     <repositories>
         <repository>
